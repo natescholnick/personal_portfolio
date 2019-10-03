@@ -5,6 +5,7 @@
 
 		<title>Personal Webpage - Home</title>
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body>
@@ -18,43 +19,68 @@
 			</nav>
 
 		</header>
+
 		<main>
 
-			<h1>Nathaniel I. Scholnick</h1>
-			
-			<img id="banner_image" src="./images/german_sunset.jpg" alt="Banner failed to load." />
+			<div class="row">
+				<div class="offset-md-1 col-md-10">
+					<div id="banner_image" class="card">
+						<h1>Nathaniel I. Scholnick</h1>
+					</div>
+				</div>
+			</div> <!-- Name + Banner -->
 
-			<section class="main_content">
-				<h3>Personality</h3>
-				<p>My Myers-Briggs personality type is ENTP. In simple language, that's sociable, technically minded, and competitive. If not, I suppose the assessment wasn't all too accurate.</p>
+			<div class="row"> <!-- main content -->
+				<div class="col-md-9">
+					<div class="row"> <!-- Personality -->
+						<div class="col-md-12">
+							<div class="card">
+								<div id="personality_text">
+									<h3>Personality</h3>
+									<p><img id="selfie" src="./images/ezoo_crew.jpg" alt="A picture of me">My Myers-Briggs personality type is ENTP. In simple language, that's sociable, technically minded, competitive, and down for anything. If not, I suppose the assessment wasn't all too accurate. I am very confident, which I think is one of the most attractive things about me. That doesen't go without a sparing moment of insufferable hubris too though. My friends sit dearly in my heart and institutions oppositely. I couldn't care less about my nationality, alma mater, or hometown sports teams. For reference, I'm the one in the middle of the photo to the right.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row"> <!-- Athletics + Academics -->
+						<div class="col-md-6">
+							<div class="card">
+								<h3>Lifetime Athletic Interests</h3>
+								<ul>
+									<li>Karate</li>
+									<li>Soccer</li>
+									<li>Distance Running</li>
+									<li>Table Tennis</li>
+									<li>Weight Lifting</li>
+									<li>Climbing</li>
+								</ul>
+								I have also spent significant time with ultimate, cycling, and basketball, but never the same singular focus of the others listed above.
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<h3>Academics</h3>
 
-				<h3>Academics</h3>
+								<p>I have been a strong student my entire life, partiularly in math and the sciences. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3"><!-- Who are you? form -->
+					<form id="diary">
+						<h3>But who are you?</h3>
+						<p>How is your own narrative internalized? According to your own memory, please briefly recant the saga leading to you.</p>
+						<textarea rows="4" cols="100" placeholder="Please write your answer here."></textarea>
+						<p>Assuming the danger of aimlessness to be axiomatic, what sort of future do you aspire to bring into being? Try to consider which goals most meaningful to you as well as your future self.</p>
+						<textarea rows="4" cols="100" placeholder="Think carefully."></textarea>
+						<p>Now given your current standing and the trajectory of your behavior leading up to this point, how do you intend to manifest these aforementioned aims?</p>
+						<textarea rows="4" cols="100" placeholder="You might learn something too."></textarea>
 
-				<p>I have been a strong student my entire life, partiularly in math and the sciences. </p>
-
-				<h3>Lifetime Athletic Interests</h3>
-				<ul>
-					<li>Karate</li>
-					<li>Soccer</li>
-					<li>Distance Running</li>
-					<li>Table Tennis</li>
-					<li>Weight Lifting</li>
-					<li>Climbing</li>
-				</ul>
-				I have also spent significant time with ultimate, cycling, and basketball, but never the same singular focus of the others listed above.
-
-				<form id="diary">
-					<h3>But who are you?</h3>
-					<p>How is your own narrative internalized? According to your own memory, please briefly recant the saga leading to you.</p>
-					<textarea rows="4" cols="100" placeholder="Please write your answer here."></textarea>
-					<p>Assuming the danger of aimlessness to be axiomatic, what sort of future do you aspire to bring into being? Try to consider which goals most meaningful to you as well as your future self.</p>
-					<textarea rows="4" cols="100" placeholder="Think carefully."></textarea>
-					<p>Now given your current standing and the trajectory of your behavior leading up to this point, how do you intend to manifest these aforementioned aims?</p>
-					<textarea rows="4" cols="100" placeholder="You might learn something too."></textarea>
-
-					<button onClick="alert('Through writing, introspection. Through introspection, clarity. Through clarity, meaning. The map worth trusting lies inward.')">Submit</button>
-				</form>
-			</section>
+						<button onClick="alert('Through writing, introspection. Through introspection, clarity. Through clarity, meaning. The map worth trusting lies inward.')">Submit</button>
+					</form>
+				</div>
+				</div>
+			</div>
 
 		</main>
 
@@ -62,5 +88,8 @@
 
 		</footer>
 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
