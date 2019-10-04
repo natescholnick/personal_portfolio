@@ -23,7 +23,7 @@
 		<main>
 
 			<div class="row">
-				<div class="offset-md-1 col-md-10">
+				<div class="col-md-10 offset-md-1">
 					<div id="banner_image" class="card">
 						<h1>Nathaniel I. Scholnick</h1>
 					</div>
@@ -31,7 +31,7 @@
 			</div> <!-- Name + Banner -->
 
 			<div class="row"> <!-- main content -->
-				<div class="col-md-9">
+				<div class="col-md-8 offset-md-1">
 					<div class="row"> <!-- Personality -->
 						<div class="col-md-12">
 							<div class="card">
@@ -45,28 +45,48 @@
 					<div class="row"> <!-- Athletics + Academics -->
 						<div class="col-md-6">
 							<div class="card">
-								<h3>Lifetime Athletic Interests</h3>
-								<ul>
-									<li>Karate</li>
-									<li>Soccer</li>
-									<li>Distance Running</li>
-									<li>Table Tennis</li>
-									<li>Weight Lifting</li>
-									<li>Climbing</li>
-								</ul>
-								I have also spent significant time with ultimate, cycling, and basketball, but never the same singular focus of the others listed above.
+								<h3>Athletic Passions, Chronologically</h3>
+									<div class="flexcontainer">
+										<div>
+											<ul>
+												<li id="card_li">Karate</li>
+												<li id="card_li">Soccer</li>
+												<li id="card_li">Distance Running</li>
+												<li id="card_li">Table Tennis</li>
+												<li id="card_li">Weight Lifting</li>
+												<li id="card_li">Climbing</li>
+											</ul>
+										</div>
+										<div id="climbing_container">
+											<img src="./images/climbing.jpg" alt="Image failed to load.">
+										</div>
+									</div>
+								<p>I have also spent significant time with ultimate, cycling, and basketball, but never the same singular focus of the others listed above.</p>
+								<p>As of now, as is indicated by the photo, climbing is my primary physical outlet. I am moderately obsessed, which I consider to be the gold standard for a hobby, and my approach is heavily improvement oriented. I have only climbed outdoors a half dozen times or so with my hardest send being 5.11d on lead. Indoors I have redpointed roughly 15 5.12s and perhaps 5 V8s, although this is quite muddled with climbing grade's high variance. My long term goal for now is 5.13a outdoors.</p>
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="card">
-								<h3>Academics</h3>
+								<h3>A Glimpse of my Academic Past</h3>
 
-								<p>I have been a strong student my entire life, partiularly in math and the sciences. </p>
+								<p>I composed this list of ten things that I believe or believe in as a "for fun" intro English assignment when I was 16. It does well to exemplify the seriousness with which I regard thought.</p>
+								<ol id="ten_things">
+									<li id="card_li">People are not created equal, but deserve to be treated as such until known otherwise.</li>
+									<li id="card_li">Pride is not a sin; that is silly. However, being proud of inheritance is foolish.</li>
+									<li id="card_li">People are rarely overloaded with work, but they’re often overwhelmed.</li>
+									<li id="card_li">Humans created God to reconcile ideas greater than themselves.</li>
+									<li id="card_li">Each individual only has partial control over their own life, but any control they lack in their life is made up for in the lives of others.</li>
+									<li id="card_li">It is ideal to recognize flaws and try to improve them, but there is no shame in having them.</li>
+									<li id="card_li">People will rise to high expectations. Contrarily, they’ll succumb to low ones.</li>
+									<li id="card_li">To give anything less than your best is to sacrifice the gift.</li>
+									<li id="card_li">Ideas and inventions do not need application to be validated. Art exists purely for its own beauty. Following this definition, art has extremely far reaching boundaries.</li>
+									<li id="card_li">Myself</li>
+								</ol>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3"><!-- Who are you? form -->
+				<div class="col-lg-2"><!-- Who are you? form -->
 					<form id="diary">
 						<h3>But who are you?</h3>
 						<p>How is your own narrative internalized? According to your own memory, please briefly recant the saga leading to you.</p>
@@ -79,13 +99,23 @@
 						<button onClick="alert('Through writing, introspection. Through introspection, clarity. Through clarity, meaning. The map worth trusting lies inward.')">Submit</button>
 					</form>
 				</div>
-				</div>
 			</div>
-
 		</main>
 
 		<footer>
-
+			<div class="fade_rule"></div>
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div id="contact_info" class="card">
+						<h2>Nathaniel I. Scholnick</h2>
+						<p id="phone">(781) 995-7069</p>
+						<a id="email_link" href="mailto:nate.scholnick@gmail.com">nate.scholnick@gmail.com</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<p id="time_stamp">Last updated 3 October 2019</p>
+				</div>
+			</div>
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

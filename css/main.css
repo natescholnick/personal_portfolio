@@ -94,12 +94,38 @@ h3 {
   padding-bottom: 5px;
 }
 
-p {
-  padding-bottom: 25px;
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexcontainer img {
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+#climbing_container {
+  margin-left: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+#ten_things {
+  margin: 0px;
+  padding-left: 15px;
+}
+
+#card_li {
+  margin: 15px 0px;
+  line-height: 18px;
 }
 
 #diary {
   padding-top: 50px;
+  margin-right: 50px;
 }
 
 form p {
@@ -107,8 +133,8 @@ form p {
 }
 
 form textarea {
-  width: 60%;
-  min-height:
+  width: 100%;
+  padding: 4px 10px;
 }
 
 button {
@@ -117,5 +143,42 @@ button {
 
 footer {
   min-height: 150px;
-  background-color: #7C8DAB;
+  background-color: #40476D;
+}
+
+.fade_rule {
+        height: 2px;
+        background-color: #000;
+        width: 100%;
+        margin: 0 auto;
+        background-image: linear-gradient(left , #7F84AB 2%, black 50%, #7F84AB 98%);
+        background-image: -o-linear-gradient(left , #7F84AB 2%, black 50%, #7F84AB 98%);
+        background-image: -moz-linear-gradient(left , #7F84AB 2%, black 50%, #7F84AB 98%);
+        background-image: -webkit-linear-gradient(left , #7F84AB 2%, black 50%, #7F84AB 98%);
+        background-image: -ms-linear-gradient(left , #7F84AB 2%, black 50%, #7F84AB 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.02, #7F84AB), color-stop(0.5, black), color-stop(0.98, #7F84AB) );
+}
+
+#contact_info {
+  background: transparent;
+  border:  none;
+  color: lightgrey;
+  box-shadow: none;
+  line-height: 20px;
+}
+
+#phone {
+  margin-bottom: 5px;
+}
+
+#email_link {
+  color: lightgrey;
+}
+
+#time_stamp {
+  font-size: 11px;
+  color: lightgrey;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
