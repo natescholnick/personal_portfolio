@@ -1,0 +1,75 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="../static/css/main.css">
+{% endblock %}
+
+
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
+
+{% block title %}
+  {{ title }} - Nate Scholnick
+{% endblock %}
+
+
+{% block navbar %}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      {% if title == 'Home' %}
+        <li class="nav-item active">
+      {% else %}
+        <li class="nav-item">
+      {% endif %}
+        <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+      </li>
+
+      {% if title == 'About' %}
+        <li class="nav-item active">
+      {% else %}
+        <li class="nav-item">
+      {% endif %}
+        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+      </li>
+
+    </ul>
+  </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <header>
+
+  </header>
+
+  <main>
+    {% block app_content %}
+
+    {% endblock %}
+  </main>
+
+  <footer>
+    <div class="fade_rule"></div>
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div id="contact_info" class="card">
+          <h2>Nathaniel I. Scholnick</h2>
+          <p id="phone">(781) 995-7069</p>
+          <a id="email_link" href="mailto:nate.scholnick@gmail.com">nate.scholnick@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p id="time_stamp">Last updated 22 October 2019</p>
+      </div>
+    </div>
+  </footer>
+{% endblock %}
